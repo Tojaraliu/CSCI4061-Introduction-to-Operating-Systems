@@ -1,0 +1,17 @@
+# this line is fine, you can skip this, below line also contains white space.... 
+	# tab case
+
+		
+	
+   gcc
+ make
+	make
+	###
+ 
+
+                                                                   
+
+make4061: 
+	echo "hello"
+clean:
+	rm make4061 makeargv.o

@@ -1,0 +1,5 @@
+test1: test2 bogus
+	echo line1
+
+test2:
+	echo line2

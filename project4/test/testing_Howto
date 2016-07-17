@@ -1,0 +1,23 @@
+RUNNING THE WEB SERVER
+============================================================
+Extract "testing.tgz" and use it as your webserver root
+directory. Run your webserver using the following command
+
+./web_server_http <port> <path_to_testing>/testing <num_dispatch> <num_worker> <num_prefetch> <queue_len> <mode> <cache_entries>
+
+For example, to run the web server at port 9000, with root directory "/home/student/joe/testing" with 100 dispatch, worker and prefetch threads,
+queue length 100, in CRF mode and 100 cache_entries run the following command
+
+./web_server_http 9000 /home/student/joe/testing 100 100 100 100 1 100
+
+
+Open another terminal and issue the following command,
+
+wget -i <path-to-urls>/urls -O results 
+
+In our case we should run
+wget -i /home/student/joe/testing/urls -O myres
+
+The above command will ask wget to fetch all the URLs listed
+on the file named "urls" that you downloaded from the assignment page.
+

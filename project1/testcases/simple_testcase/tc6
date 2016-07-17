@@ -1,0 +1,8 @@
+#test execute command failed
+
+test1: test3
+	echo test1
+
+test3:
+	cbd test3
+
